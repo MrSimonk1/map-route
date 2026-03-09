@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Hidden Places</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="topbar">
+Rastos vietos: <span id="progress">0 / 0</span>
+</div>
+
+<div id="map"></div>
+<div id="modal" class="hidden">
+<div class="modal-content">
+<h2 id="place-name"></h2>
+<img id="place-image" />
+<p id="place-desc"></p>
+<div class="status">
+<button id="found-btn">Found</button>
+<button id="notfound-btn">Not Found</button>
+</div>
+
+<h4>Looks nice</h4>
+<div id="rate-look" class="rating"></div>
+
+<h4>Looks like photo</h4>
+<div id="rate-accuracy" class="rating"></div>
+
+<button id="navigate">Navigate</button>
+<button id="close">Close</button>
+
+</div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
