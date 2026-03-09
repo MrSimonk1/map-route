@@ -14,12 +14,40 @@
     ]
   },
   {
+    "id": "draugyste",
+    "name": "Draugystes knygynas",
+    "lat": 54.68637133847385,
+    "lng": 25.284268864296106,
+    "image": "./draugyste.jpg",
+    "description": "Nezinau ar nemeluoja",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
     "id": "pasaka",
     "name": "Pasaka",
     "lat": 54.68289306464513,
     "lng": 25.281609916603784,
     "image": "./pasaka.jpg",
     "description": "Description",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "maironio8",
+    "name": "Šv. Onos ir Bernardinų bažnyčių kompleksas",
+    "lat": 54.683221853229895,
+    "lng": 25.293379177821194,
+    "image": "./maironio8.jpg",
+    "description": "Antano Garbausko vitražai (bažnyčioje); Broniaus Bružo vitražai (vienuolyne)",
     "ratings": [
       {
         "ratingTitle": "Atrodo gerai?",
