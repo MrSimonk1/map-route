@@ -61,11 +61,12 @@ function openModal(place) {
 }
 
 // update status buttons colors
-function updateStatusButtons(status) {
+function updateStatusButtons(status){
   const foundBtn = document.getElementById("found-btn");
   const notFoundBtn = document.getElementById("notfound-btn");
-  foundBtn.style.backgroundColor = status === "found" ? "green" : "";
-  notFoundBtn.style.backgroundColor = status === "not-found" ? "red" : "";
+
+  foundBtn.classList.toggle("found", status === "found");
+  notFoundBtn.classList.toggle("notfound", status === "not-found");
 }
 
 // create rating spans and mark selected
