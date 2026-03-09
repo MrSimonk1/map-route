@@ -3,8 +3,14 @@
     "id": "cathedral",
     "name": "Vilnius Cathedral",
     "lat": 54.6852,
-    "lng": 25.2870,
+    "lng": 25.287,
     "image": "./cathedral.jpg",
-    "description": "One of the main landmarks of Vilnius."
+    "description": "One of the main landmarks of Vilnius.",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
   }
 ]

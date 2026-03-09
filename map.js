@@ -61,10 +61,10 @@ function openModal(place) {
 
   // navigation
   document.getElementById("navigate").onclick = () => {
-  window.open(
-    `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`,
-  );
-};
+    window.open(
+      `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`,
+    );
+  };
 }
 
 // update status buttons colors
@@ -78,44 +78,32 @@ function updateStatusButtons(status) {
 
 // create rating spans and mark selected
 function createRatings(place, placeData = {}) {
-  const look = document.getElementById("rate-look");
-  look.innerHTML = "";
+  console.log(placeData);
+  console.log(place);
 
-  for (let i = 1; i <= 10; i++) {
-    const a = document.createElement("span");
-    a.innerText = i;
-    if (placeData.rating_look === i) a.style.backgroundColor = "#88f";
-    a.onclick = () => {
-      setRating(place, "rating_look", i);
-      createRatings(place, loadProgress()[place.id]);
-    };
-    look.appendChild(a);
-  }
+  const ratingsDiv = document.getElementById("ratings");
+  ratingsDiv.innerHTML = "";
 
-  const accuracy = document.getElementById("rate-accuracy");
-  accuracy.innerHTML = "";
-  for (let i = 1; i <= 5; i++) {
-    const b = document.createElement("span");
-    b.innerText = i;
-    if (placeData.rating_accuracy === i) b.style.backgroundColor = "#88f";
-    b.onclick = () => {
-      setRating(place, "rating_accuracy", i);
-      createRatings(place, loadProgress()[place.id]);
-    };
-    accuracy.appendChild(b);
-  }
+  place.ratings.forEach((r, i) => {
+    const div = document.createElement("div");
+    div.id = i;
+    div.className = "rating";
 
-  const custom1 = document.getElementById("rate-custom-1");
-  custom1.innerHTML = "";
-  ["bbs", "kazn", "50/50", "px", "wow"].forEach((r) => {
-    const a = document.createElement("span");
-    a.innerText = r;
-    if (placeData.rating_custom_1 === r) a.style.backgroundColor = "#88f";
-    a.onclick = () => {
-      setRating(place, "rating_custom_1", r);
-      createRatings(place, loadProgress()[place.id]);
-    };
-    custom1.appendChild(a);
+    const h4 = document.createElement("h4");
+    h4.innerText = r.ratingTitle;
+    div.appendChild(h4);
+
+    r.ratingOptions.forEach((ro) => {
+      const span = document.createElement("span");
+      span.innerHTML = ro;
+      if (placeData[i] === ro) span.style.backgroundColor = "#88f";
+      span.onclick = () => {
+        setRating(place, i, ro);
+        createRatings(place, loadProgress()[place.id]);
+      };
+      div.appendChild(span);
+    });
+    ratingsDiv.appendChild(div);
   });
 }
 

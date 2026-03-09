@@ -60,18 +60,25 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
 button:hover {
   background-color: #187bcd;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
 }
 
 .status button {
@@ -86,15 +93,19 @@ button:active {
   background-color: red;
 }
 
+.rating h4 {
+  margin: 5px 0;
+}
+
 .rating span {
-  display:inline-block;
-  padding:8px 12px;
-  margin:2px;
-  border-radius:6px;
-  cursor:pointer;
-  background:#eee;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
   transition: all 0.2s ease;
-  user-select:none;
+  user-select: none;
 }
 
 .rating span:hover {
@@ -102,10 +113,17 @@ button:active {
 }
 
 .rating span:hover {
-  background:#ddd;
+  background: #ddd;
 }
 
 .rating span.selected {
-  background:#1e90ff;
-  color:white;
+  background: #1e90ff;
+  color: white;
+}
+
+#footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
 }
