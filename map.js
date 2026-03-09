@@ -58,10 +58,17 @@ function openModal(place) {
   // update status buttons and ratings
   updateStatusButtons(placeData.status);
   createRatings(place, placeData);
+
+  // navigation
+  document.getElementById("navigate").onclick = () => {
+  window.open(
+    `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`,
+  );
+};
 }
 
 // update status buttons colors
-function updateStatusButtons(status){
+function updateStatusButtons(status) {
   const foundBtn = document.getElementById("found-btn");
   const notFoundBtn = document.getElementById("notfound-btn");
 
@@ -72,10 +79,7 @@ function updateStatusButtons(status){
 // create rating spans and mark selected
 function createRatings(place, placeData = {}) {
   const look = document.getElementById("rate-look");
-  const accuracy = document.getElementById("rate-accuracy");
-
   look.innerHTML = "";
-  accuracy.innerHTML = "";
 
   for (let i = 1; i <= 10; i++) {
     const a = document.createElement("span");
@@ -86,7 +90,11 @@ function createRatings(place, placeData = {}) {
       createRatings(place, loadProgress()[place.id]);
     };
     look.appendChild(a);
+  }
 
+  const accuracy = document.getElementById("rate-accuracy");
+  accuracy.innerHTML = "";
+  for (let i = 1; i <= 5; i++) {
     const b = document.createElement("span");
     b.innerText = i;
     if (placeData.rating_accuracy === i) b.style.backgroundColor = "#88f";
@@ -96,6 +104,19 @@ function createRatings(place, placeData = {}) {
     };
     accuracy.appendChild(b);
   }
+
+  const custom1 = document.getElementById("rate-custom-1");
+  custom1.innerHTML = "";
+  ["bbs", "kazn", "50/50", "px", "wow"].forEach((r) => {
+    const a = document.createElement("span");
+    a.innerText = r;
+    if (placeData.rating_custom_1 === r) a.style.backgroundColor = "#88f";
+    a.onclick = () => {
+      setRating(place, "rating_custom_1", r);
+      createRatings(place, loadProgress()[place.id]);
+    };
+    custom1.appendChild(a);
+  });
 }
 
 // save rating in localStorage
