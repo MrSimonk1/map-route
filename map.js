@@ -25,10 +25,27 @@ function getColor(status) {
   return "gray";
 }
 
-function createIcon(color) {
+function createIcon(color, i) {
   return L.divIcon({
     className: "",
-    html: `<div style="width:14px;height:14px;background:${color};border-radius:50%;border:2px solid white"></div>`,
+    iconSize: [24, 24],
+    html: `
+      <div style="
+        width:24px;
+        height:24px;
+        background:${color};
+        border-radius:50%;
+        border:2px solid white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:12px;
+        font-weight:bold;
+        color:white;
+      ">
+        ${i}
+      </div>
+    `,
   });
 }
 
@@ -150,11 +167,11 @@ fetch("places.json")
     places = data;
     const progress = loadProgress();
 
-    places.forEach((place) => {
+    places.forEach((place, i) => {
       const status = progress[place.id]?.status;
 
       const marker = L.marker([place.lat, place.lng], {
-        icon: createIcon(getColor(status)),
+        icon: createIcon(getColor(status), i+1),
       }).addTo(map);
 
       marker.on("click", () => openModal(place));

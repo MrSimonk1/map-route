@@ -1,11 +1,81 @@
 [
   {
-    "id": "cathedral",
-    "name": "Vilnius Cathedral",
-    "lat": 54.6852,
-    "lng": 25.287,
-    "image": "./cathedral.jpg",
-    "description": "One of the main landmarks of Vilnius.",
+    "id": "stebuklas",
+    "name": "Stebuklas",
+    "lat": 54.685791793946684,
+    "lng": 25.286919188005914,
+    "image": "./stebuklas.jpg",
+    "description": "...",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "pasaka",
+    "name": "Pasaka",
+    "lat": 54.68289306464513,
+    "lng": 25.281609916603784,
+    "image": "./pasaka.jpg",
+    "description": "Description",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "think",
+    "name": "Think",
+    "lat": 54.68504461297042,
+    "lng": 25.284506425055763,
+    "image": "./think.jpg",
+    "description": "Cia krc gali buti sugadinta bsk.....",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "loveFirst",
+    "name": "Love First",
+    "lat": 54.68265017304953,
+    "lng": 25.279500597378608,
+    "image": "./loveFirst.jpg",
+    "description": "Idomesnis toks, reikes i broma eiti..",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "domininkonai",
+    "name": "Domininkonai",
+    "lat": 54.68139205187382,
+    "lng": 25.283538497094085,
+    "image": "./domininkonai.jpg",
+    "description": "Salia vienuolyno",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "stripakas",
+    "name": "Stripa....kas????",
+    "lat": 54.679094114446116,
+    "lng": 25.28700999985023,
+    "image": "./stripakas.jpg",
+    "description": "Turbut ispudingiausias, bet.....",
     "ratings": [
       {
         "ratingTitle": "Atrodo gerai?",
