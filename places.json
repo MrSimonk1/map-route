@@ -110,5 +110,89 @@
         "ratingOptions": [1, 2, 3, 4, 5]
       }
     ]
+  },
+  {
+    "id": "encounter",
+    "name": "",
+    "lat": 54.68089999382342,
+    "lng": 25.28819849663227,
+    "image": "./encounter.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "sage",
+    "name": "",
+    "lat": 54.68099553931956,
+    "lng": 25.286547454438736,
+    "image": "./sage.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "man",
+    "name": "",
+    "lat": 54.68050969731215,
+    "lng": 25.285922062900585,
+    "image": "./man.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "boys",
+    "name": "",
+    "lat": 54.679972903434624,
+    "lng": 25.2859479363803,
+    "image": "./boys.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "musician",
+    "name": "",
+    "lat": 54.67922622178308,
+    "lng": 25.283703179411972,
+    "image": "./musician.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "trader",
+    "name": "",
+    "lat": 54.67755990685481,
+    "lng": 25.284400547053185,
+    "image": "./trader.jpg",
+    "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
   }
 ]
