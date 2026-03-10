@@ -65,8 +65,21 @@ function openModal(place, i) {
 
   // set content
   document.getElementById("place-name").innerText = place.name;
-  document.getElementById("place-image").src = place.image;
   document.getElementById("place-desc").innerText = place.description;
+  const imgWrapper = document.getElementById("place-image-wrapper");
+  imgWrapper.innerHTML = `<span class="loader"></span>`;
+  const img = new Image();
+  img.id = "place-image";
+  img.onload = () => {
+    setTimeout(() => {
+      imgWrapper.innerHTML = "";
+      imgWrapper.appendChild(img);
+    }, 1000);
+  };
+  img.onerror = () => {
+    imgWrapper.innerHTML = "Image not available";
+  };
+  img.src = place.image;
 
   // show modal
   modal.classList.remove("hidden");

@@ -17,6 +17,26 @@ body {
   overflow: hidden;
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #3e2929;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #modal {
   overflow: scroll;
   position: fixed;
@@ -44,10 +64,16 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+#place-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 266px;
+}
+
 img {
-  width: 100%;
   border-radius: 6px;
-  margin-bottom: 10px;
+  height: 266px;
 }
 
 button {
