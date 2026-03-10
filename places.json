@@ -4,7 +4,7 @@
     "name": "Stebuklas",
     "lat": 54.685791793946684,
     "lng": 25.286919188005914,
-    "image": "./images/stebuklas.jpg",
+    "image": "images/stebuklas.jpg",
     "description": "...",
     "ratings": [
       {
@@ -18,7 +18,7 @@
     "name": "Draugystes knygynas",
     "lat": 54.68637133847385,
     "lng": 25.284268864296106,
-    "image": "./images/draugyste.jpg",
+    "image": "images/draugyste.jpg",
     "description": "Nezinau ar nemeluoja",
     "ratings": [
       {
@@ -32,7 +32,7 @@
     "name": "Pasaka",
     "lat": 54.68289306464513,
     "lng": 25.281609916603784,
-    "image": "./images/pasaka.jpg",
+    "image": "images/pasaka.jpg",
     "description": "Description",
     "ratings": [
       {
@@ -46,7 +46,7 @@
     "name": "Šv. Onos ir Bernardinų bažnyčių kompleksas",
     "lat": 54.683221853229895,
     "lng": 25.293379177821194,
-    "image": "./images/maironio8.jpg",
+    "image": "images/maironio8.jpg",
     "description": "Antano Garbausko vitražai (bažnyčioje); Broniaus Bružo vitražai (vienuolyne)",
     "ratings": [
       {
@@ -60,7 +60,7 @@
     "name": "Think",
     "lat": 54.68504461297042,
     "lng": 25.284506425055763,
-    "image": "./images/think.jpg",
+    "image": "images/think.jpg",
     "description": "Cia krc gali buti sugadinta bsk.....",
     "ratings": [
       {
@@ -74,7 +74,7 @@
     "name": "Love First",
     "lat": 54.68265017304953,
     "lng": 25.279500597378608,
-    "image": "./images/loveFirst.jpg",
+    "image": "images/loveFirst.jpg",
     "description": "Idomesnis toks, reikes i broma eiti..",
     "ratings": [
       {
@@ -88,7 +88,7 @@
     "name": "Domininkonai",
     "lat": 54.68139205187382,
     "lng": 25.283538497094085,
-    "image": "./images/domininkonai.jpg",
+    "image": "images/domininkonai.jpg",
     "description": "Salia vienuolyno",
     "ratings": [
       {
@@ -102,7 +102,7 @@
     "name": "Stripa....kas????",
     "lat": 54.679094114446116,
     "lng": 25.28700999985023,
-    "image": "./images/stripakas.jpg",
+    "image": "images/stripakas.jpg",
     "description": "Turbut ispudingiausias, bet.....",
     "ratings": [
       {
@@ -116,7 +116,7 @@
     "name": "",
     "lat": 54.68089999382342,
     "lng": 25.28819849663227,
-    "image": "./images/encounter.jpg",
+    "image": "images/encounter.jpg",
     "description": "////",
     "ratings": [
       {
@@ -130,7 +130,7 @@
     "name": "",
     "lat": 54.68099553931956,
     "lng": 25.286547454438736,
-    "image": "./images/sage.jpg",
+    "image": "images/sage.jpg",
     "description": "////",
     "ratings": [
       {
@@ -144,7 +144,7 @@
     "name": "",
     "lat": 54.68050969731215,
     "lng": 25.285922062900585,
-    "image": "./images/man.jpg",
+    "image": "images/man.jpg",
     "description": "////",
     "ratings": [
       {
@@ -158,7 +158,7 @@
     "name": "",
     "lat": 54.679972903434624,
     "lng": 25.2859479363803,
-    "image": "./images/boys.jpg",
+    "image": "images/boys.jpg",
     "description": "////",
     "ratings": [
       {
@@ -172,7 +172,7 @@
     "name": "",
     "lat": 54.67922622178308,
     "lng": 25.283703179411972,
-    "image": "./images/musician.jpg",
+    "image": "images/musician.jpg",
     "description": "////",
     "ratings": [
       {
@@ -186,7 +186,7 @@
     "name": "",
     "lat": 54.67755990685481,
     "lng": 25.284400547053185,
-    "image": "./images/trader.jpg",
+    "image": "images/trader.jpg",
     "description": "////",
     "ratings": [
       {
