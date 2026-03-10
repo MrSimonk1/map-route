@@ -93,6 +93,13 @@ button:active {
   background-color: red;
 }
 
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .rating h4 {
   margin: 5px 0;
 }

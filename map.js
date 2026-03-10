@@ -58,7 +58,7 @@ function updateProgress() {
   progressEl.innerText = `${found} / ${places.length}`;
 }
 
-function openModal(place) {
+function openModal(place, i) {
   activePlace = place;
   const progress = loadProgress();
   const placeData = progress[place.id] || {};
@@ -82,6 +82,11 @@ function openModal(place) {
       `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`,
     );
   };
+
+  // modal buttons
+  document.getElementById("found-btn").onclick = () => setStatus("found");
+  document.getElementById("notfound-btn").onclick = () =>
+    setStatus("not-found");
 }
 
 // update status buttons colors
@@ -95,32 +100,37 @@ function updateStatusButtons(status) {
 
 // create rating spans and mark selected
 function createRatings(place, placeData = {}) {
-  console.log(placeData);
-  console.log(place);
-
   const ratingsDiv = document.getElementById("ratings");
   ratingsDiv.innerHTML = "";
 
   place.ratings.forEach((r, i) => {
-    const div = document.createElement("div");
-    div.id = i;
-    div.className = "rating";
+    const ratingDiv = document.createElement("div");
+    ratingDiv.id = i;
+    ratingDiv.className = "rating";
 
     const h4 = document.createElement("h4");
     h4.innerText = r.ratingTitle;
-    div.appendChild(h4);
+    ratingDiv.appendChild(h4);
+
+    const ratingOptionsDiv = document.createElement("div");
+    ratingOptionsDiv.className = "rating-options";
 
     r.ratingOptions.forEach((ro) => {
       const span = document.createElement("span");
       span.innerHTML = ro;
+
       if (placeData[i] === ro) span.style.backgroundColor = "#88f";
+
       span.onclick = () => {
         setRating(place, i, ro);
         createRatings(place, loadProgress()[place.id]);
       };
-      div.appendChild(span);
+
+      ratingOptionsDiv.appendChild(span);
     });
-    ratingsDiv.appendChild(div);
+
+    ratingDiv.appendChild(ratingOptionsDiv);
+    ratingsDiv.appendChild(ratingDiv);
   });
 }
 
@@ -141,19 +151,15 @@ function setStatus(status) {
 
   updateMarker(activePlace);
   updateProgress();
-  updateStatusButtons(status); // immediately update buttons
+  updateStatusButtons(status);
 }
 
 // update marker color
 function updateMarker(place) {
   const progress = loadProgress();
   const status = progress[place.id]?.status;
-  markers[place.id].setIcon(createIcon(getColor(status)));
+  markers[place.id].setIcon(createIcon(getColor(status), place.index));
 }
-
-// modal button events
-document.getElementById("found-btn").onclick = () => setStatus("found");
-document.getElementById("notfound-btn").onclick = () => setStatus("not-found");
 
 document.getElementById("close").onclick = () => {
   modal.classList.add("hidden");
@@ -168,13 +174,14 @@ fetch("places.json")
     const progress = loadProgress();
 
     places.forEach((place, i) => {
+      place.index = i + 1;
       const status = progress[place.id]?.status;
 
       const marker = L.marker([place.lat, place.lng], {
-        icon: createIcon(getColor(status), i+1),
+        icon: createIcon(getColor(status), place.index),
       }).addTo(map);
 
-      marker.on("click", () => openModal(place));
+      marker.on("click", () => openModal(place, place.index));
 
       markers[place.id] = marker;
     });
