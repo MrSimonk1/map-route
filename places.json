@@ -5,53 +5,29 @@
     "lat": 54.685791793946684,
     "lng": 25.286919188005914,
     "image": "images/stebuklas.jpg",
-    "description": "...",
+    "description": "Pirmoji kelionės vieta \"stebuklas\", nes tu esi tikras.... nvm. \n Jei bažnyčioj tavęs neišklauso, gali pabandyti laimę šitoj vietoj. \n Iš pradžių žmonės nežinojo, ką reikia ant jos daryti, vieni sukosi, kiti šokinėjo. \n \"Nugalėjo\" sukimasis.",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Tiki plytele?",
+        "ratingOptions": ["Ne", "Taip"]
       }
     ]
   },
   {
     "id": "draugyste",
-    "name": "Draugystes knygynas",
+    "name": "Draugystės knygynas",
     "lat": 54.68637133847385,
     "lng": 25.284268864296106,
     "image": "images/draugyste.jpg",
-    "description": "Nezinau ar nemeluoja",
+    "description": "Viduje turėtų būti vitražas, bet labai daug abejonių, ar kažkas ten iš viso yra. \n Bronius Bružas (dar gyvas), heraldinis vitražas. \n Šiaip gražūs jo vitražai fotkėse, susieti su architektūra stiliumi, bet kaip heraldika susijusi su biblioteka - neaišku. \n Yra atskiras jo vitražų ciklas Jaunimo teatre.",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "pasaka",
-    "name": "Pasaka",
-    "lat": 54.68289306464513,
-    "lng": 25.281609916603784,
-    "image": "images/pasaka.jpg",
-    "description": "Description",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "maironio8",
-    "name": "Šv. Onos ir Bernardinų bažnyčių kompleksas",
-    "lat": 54.683221853229895,
-    "lng": 25.293379177821194,
-    "image": "images/maironio8.jpg",
-    "description": "Antano Garbausko vitražai (bažnyčioje); Broniaus Bružo vitražai (vienuolyne)",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Vitažai yra:",
+        "ratingOptions": [
+          "Overrated",
+          "50/50",
+          "Gražiausias dalykas šioje žemelėje"
+        ]
       }
     ]
   },
@@ -61,11 +37,29 @@
     "lat": 54.68504461297042,
     "lng": 25.284506425055763,
     "image": "images/think.jpg",
-    "description": "Cia krc gali buti sugadinta bsk.....",
+    "description": "Jurgis Tarabilda šitą graffiti sukūrė 2013 m. per pirmąjį Vilniaus gatvės meno festivalį. \n Daug šansų, kad siena dabar apipaišyta kitais dalykais, ech tas jaunimas.....",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Nuvandalintas?",
+        "ratingOptions": ["Ne", "Taip", "Tik dar gražiau"]
+      }
+    ]
+  },
+  {
+    "id": "pasaka",
+    "name": "Pasaka",
+    "lat": 54.68289306464513,
+    "lng": 25.281609916603784,
+    "image": "images/pasaka.jpg",
+    "description": "\"Pasauliu netikiu, o pasaka tikiu\" - Julijus Cezaris. \n Kiek baugiai atrodantys \"Alisos Stebuklų šalyje\" personažai stebi kiekvieną, kas įeina ir išeina iš kino teatro patalpų, Antanas Dubra.",
+    "ratings": [
+      {
+        "ratingTitle": "Tikiu:",
+        "ratingOptions": ["Pasauliu", "Pasaka", "Dievu"]
+      },
+      {
+        "ratingTitle": "Geriausia imperija:",
+        "ratingOptions": ["Romos", "Britų", "LDK"]
       }
     ]
   },
@@ -75,11 +69,11 @@
     "lat": 54.68265017304953,
     "lng": 25.279500597378608,
     "image": "images/loveFirst.jpg",
-    "description": "Idomesnis toks, reikes i broma eiti..",
+    "description": "Kol vienos poros baigia vienas kito sakinius, kitos – vienas kito kantrybę. \n Autorius matyt norėjo kažką pasakyti apie savo ex. Algirdas Padleckis. \n Įdomesnis variantas, reikės eiti į bromą :)",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Bromas man asocijuojasi su:",
+        "ratingOptions": ["Benamis", "Cheminis elementas", "Arka / praėjimas"]
       }
     ]
   },
@@ -188,6 +182,20 @@
     "lng": 25.284400547053185,
     "image": "images/trader.jpg",
     "description": "////",
+    "ratings": [
+      {
+        "ratingTitle": "Atrodo gerai?",
+        "ratingOptions": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  {
+    "id": "maironio8",
+    "name": "Šv. Onos ir Bernardinų bažnyčių kompleksas",
+    "lat": 54.683221853229895,
+    "lng": 25.293379177821194,
+    "image": "images/maironio8.jpg",
+    "description": "Antano Garbausko vitražai (bažnyčioje); Broniaus Bružo vitražai (vienuolyne)",
     "ratings": [
       {
         "ratingTitle": "Atrodo gerai?",

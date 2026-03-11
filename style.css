@@ -65,7 +65,8 @@ body {
 }
 
 #place-name {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 #place-image-wrapper {
