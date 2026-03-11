@@ -63,6 +63,8 @@ function openModal(place, i) {
   const progress = loadProgress();
   const placeData = progress[place.id] || {};
 
+  document.body.style.overflow = "hidden";
+
   // set content
   document.getElementById("place-name").innerText = place.name;
   document.getElementById("place-desc").innerText = place.description;
@@ -175,6 +177,7 @@ function updateMarker(place) {
 }
 
 document.getElementById("close").onclick = () => {
+  document.body.style.overflow = "";
   modal.classList.add("hidden");
   map.dragging.enable();
 };
