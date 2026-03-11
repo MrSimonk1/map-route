@@ -71,6 +71,7 @@ function openModal(place, i) {
   const imgWrapper = document.getElementById("place-image-wrapper");
   imgWrapper.innerHTML = `<span class="loader"></span>`;
   const img = new Image();
+  img.src = "";
   img.id = "place-image";
   img.onload = () => {
     setTimeout(() => {
