@@ -83,13 +83,71 @@
     "lat": 54.68139205187382,
     "lng": 25.283538497094085,
     "image": "images/domininkonai.jpg",
-    "description": "Salia vienuolyno",
+    "description": "Daug graffiti ant apleistų pastatų. \n Šalia yra Vilniaus domininkonų vienuolyas, taigi yra galimybė, kad matom pačių vienuolių sukurtą meną.",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Kas nupaišė: ",
+        "ratingOptions": ["Stobal vienuoliai", "Kažkas random"]
+      },
+      {
+        "ratingTitle": "Gatves graffitis: ",
+        "ratingOptions": ["Zjbs", "Meh"]
       }
     ]
+  },
+  {
+    "id": "sage",
+    "name": "Išminčius",
+    "lat": 54.68099553931956,
+    "lng": 25.286547454438736,
+    "image": "images/sage.jpg",
+    "description": "Angliškai \"Sage\", kas reiškia ir šalaviją. Kas ten žino, gal žmogus ant jo buvo sėdęs. \n Piešinys įkvėptas nuotraukos, kuri buvo padaryta prie Vilniaus Didžiosios sinagogos. \n Pasaulyje yra daugiau nei 900 šalavijo rūšių :)",
+    "ratings": []
+  },
+  {
+    "id": "encounter",
+    "name": "Susitikimas",
+    "lat": 54.68089999382342,
+    "lng": 25.28819849663227,
+    "image": "images/encounter.jpg",
+    "description": "Piešinys – tarsi praeiviai; jei susidomėjai, gali sustoti ir apmąstyti praeitį ir Vilnijos žydų likimą – jei ne, gali tiesiog eiti savo keliu ir galbūt kitą kartą užsukti.",
+    "ratings": []
+  },
+  {
+    "id": "man",
+    "name": "Vyras iš prekybinio rajono",
+    "lat": 54.68050969731215,
+    "lng": 25.285922062900585,
+    "image": "images/man.jpg",
+    "description": "Kai kuriuose regionuose, pavyzdžiui, Gruzijoje, žydų prekeiviai buvo sukūrę savitą hebrajų kalbos ir vietinių dialektų mišinį, leidusį jiems saugiai bendrauti tarpusavyje perpildytose turgavietėse.",
+    "ratings": []
+  },
+  {
+    "id": "boys",
+    "name": "Berniukai su laikraščiais",
+    "lat": 54.679972903434624,
+    "lng": 25.2859479363803,
+    "image": "images/boys.jpg",
+    "description": "Žydų laikraščiams Vokietijoje nereikėjo spausdinti nacių propagandos. Nu bet galiausiai laikraščiai vis tiek buvo užbaninti.",
+    "ratings": []
+  },
+  {
+    "id": "musician",
+    "name": "Gatvės muzikantai",
+    "lat": 54.67922622178308,
+    "lng": 25.283703179411972,
+    "image": "images/musician.jpg",
+    "description": "Rytų Europoje gatvės muzikantas tarp žydų nebuvo tik atsitiktinis užsiėmimas – tai buvo pripažintas amatas. Klezmerių muzikantai XVII amžiuje Lenkijoje ir Bohemijoje buvo susibūrę į gildijas (khevre), leidusias jiems legaliai veikti ir patiems nustatyti savo darbo kainas.",
+    "ratings": []
+  },
+  {
+    "id": "trader",
+    "name": "Pirklys",
+    "lat": 54.67755990685481,
+    "lng": 25.284400547053185,
+    "image": "images/trader.jpg",
+    "description": "VII–VIII a. žydų bendruomenėse vyrų raštingumas buvo gana aukštas, nes religiniame gyvenime buvo svarbu mokėti skaityti Torą. Tuo metu, kai didelė dalis Europos gyventojų dar buvo neraštingi, šis įgūdis suteikė žydų pirkliams ir finansininkams pranašumą prekyboje ir finansų srityje. \n Žydų pirkliai prisidėjo prie kavos paplitimo Europoje ir pirmųjų kavinių atsiradimo. Viena pirmųjų kavinių Europoje buvo atidaryta 1632 m. Livorne žydų pirklio iniciatyva. Panašiai ir Anglijoje – pirmąją kavinę 1650 m. atidarė imigrantas, amžininkų vadintas \"Jacob the Jew\".",
+    "ratings": []
   },
   {
     "id": "stripakas",
@@ -97,95 +155,11 @@
     "lat": 54.679094114446116,
     "lng": 25.28700999985023,
     "image": "images/stripakas.jpg",
-    "description": "Turbut ispudingiausias, bet.....",
+    "description": "Turbūt ispūdingiausias kūrinys, bet sunkiausia jį pamatyti, nes yra privačiame šokio kambaryje. \n \"...pavyko atrasti akademijos dėstytojui Žydrūnui Mirinavičiui\", hmmm, Žydrūnai, ar nori kažką pasakyti? \n Luitinis vitražas, Kazys Morkūnas, 1974 m.",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "encounter",
-    "name": "",
-    "lat": 54.68089999382342,
-    "lng": 25.28819849663227,
-    "image": "images/encounter.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "sage",
-    "name": "",
-    "lat": 54.68099553931956,
-    "lng": 25.286547454438736,
-    "image": "images/sage.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "man",
-    "name": "",
-    "lat": 54.68050969731215,
-    "lng": 25.285922062900585,
-    "image": "images/man.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "boys",
-    "name": "",
-    "lat": 54.679972903434624,
-    "lng": 25.2859479363803,
-    "image": "images/boys.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "musician",
-    "name": "",
-    "lat": 54.67922622178308,
-    "lng": 25.283703179411972,
-    "image": "images/musician.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
-      }
-    ]
-  },
-  {
-    "id": "trader",
-    "name": "",
-    "lat": 54.67755990685481,
-    "lng": 25.284400547053185,
-    "image": "images/trader.jpg",
-    "description": "////",
-    "ratings": [
-      {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Tema?",
+        "ratingOptions": ["Tema", "Tema", "Tema"]
       }
     ]
   },
@@ -195,11 +169,15 @@
     "lat": 54.683221853229895,
     "lng": 25.293379177821194,
     "image": "images/maironio8.jpg",
-    "description": "Antano Garbausko vitražai (bažnyčioje); Broniaus Bružo vitražai (vienuolyne)",
+    "description": "Vitražai bažnyčioje ir vienuolyne. Šiaip šitie gerai atrodo, todėl klausimas žemiau yra iš vieno iš praėjusių spot'ų",
     "ratings": [
       {
-        "ratingTitle": "Atrodo gerai?",
-        "ratingOptions": [1, 2, 3, 4, 5]
+        "ratingTitle": "Vitažai yra:",
+        "ratingOptions": [
+          "Overrated",
+          "50/50",
+          "Gražiausias dalykas šioje žemelėje"
+        ]
       }
     ]
   }

@@ -71,13 +71,14 @@ function openModal(place, i) {
   const imgWrapper = document.getElementById("place-image-wrapper");
   imgWrapper.innerHTML = `<span class="loader"></span>`;
   const img = new Image();
-  img.src = "";
   img.id = "place-image";
+  const start = Date.now();
   img.onload = () => {
+    const delay = Math.max(0, 400 - (Date.now() - start));
     setTimeout(() => {
       imgWrapper.innerHTML = "";
       imgWrapper.appendChild(img);
-    }, 1000);
+    }, delay);
   };
   img.onerror = () => {
     imgWrapper.innerHTML = "Image not available";
