@@ -19,6 +19,10 @@ function saveProgress(data) {
   localStorage.setItem("placesProgress", JSON.stringify(data));
 }
 
+function clearProgress() {
+  localStorage.setItem("placesProgress", JSON.stringify({}));
+}
+
 function getColor(status) {
   if (status === "found") return "green";
   if (status === "not-found") return "red";
@@ -53,7 +57,7 @@ function updateProgress() {
   const progress = loadProgress();
   let found = 0;
   places.forEach((p) => {
-    if (progress[p.id]?.status === "found") found++;
+    if (progress[p.id]?.status) found++;
   });
   progressEl.innerText = `${found} / ${places.length}`;
 }
@@ -185,24 +189,33 @@ document.getElementById("close").onclick = () => {
 };
 
 // fetch places.json
-fetch("places.json")
-  .then((r) => r.json())
-  .then((data) => {
-    places = data;
-    const progress = loadProgress();
+function init() {
+  fetch("places.json")
+    .then((r) => r.json())
+    .then((data) => {
+      places = data;
+      const progress = loadProgress();
 
-    places.forEach((place, i) => {
-      place.index = i + 1;
-      const status = progress[place.id]?.status;
+      places.forEach((place, i) => {
+        place.index = i + 1;
+        const status = progress[place.id]?.status;
 
-      const marker = L.marker([place.lat, place.lng], {
-        icon: createIcon(getColor(status), place.index),
-      }).addTo(map);
+        const marker = L.marker([place.lat, place.lng], {
+          icon: createIcon(getColor(status), place.index),
+        }).addTo(map);
 
-      marker.on("click", () => openModal(place, place.index));
+        marker.on("click", () => openModal(place, place.index));
 
-      markers[place.id] = marker;
+        markers[place.id] = marker;
+      });
+
+      updateProgress();
     });
+}
 
-    updateProgress();
-  });
+document.getElementById("clearProgressButton").onclick = () => {
+  clearProgress();
+  init();
+};
+
+init();
