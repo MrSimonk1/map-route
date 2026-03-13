@@ -169,15 +169,11 @@
     "lat": 54.683221853229895,
     "lng": 25.293379177821194,
     "image": "images/maironio8.jpg",
-    "description": "Vitražai bažnyčioje ir vienuolyne. Šiaip šitie gerai atrodo, todėl klausimas žemiau yra iš vieno iš praėjusių spot'ų",
+    "description": "Vitražai bažnyčioje ir vienuolyne. 2 už 1 kainą.",
     "ratings": [
       {
-        "ratingTitle": "Vitažai yra:",
-        "ratingOptions": [
-          "Overrated",
-          "50/50",
-          "Gražiausias dalykas šioje žemelėje"
-        ]
+        "ratingTitle": "Ar meluoji, kad radai?",
+        "ratingOptions": ["Taip", "Ne", ":-)"]
       }
     ]
   }
